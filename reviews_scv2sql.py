@@ -49,7 +49,6 @@ for i,write in enumerate(zonename):
     for i,ls in enumerate(getname):
         new = ls.replace("台北市\{}\\".format(write),"")
         # 因為"\"放在str中最後一個字用replace會出錯，所以才要分開寫
-        # new = new.replace("\\","") 這個不用看，先放在這邊
         all.append(new)
 
     for i in all:
