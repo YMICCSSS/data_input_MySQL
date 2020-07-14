@@ -13,7 +13,7 @@ engine = create_engine('mysql+pymysql://tibame:tibame2020@34.66.10.69:3306/Store
 db = pymysql.connect("34.66.10.69","tibame","tibame2020","Store_db" )
 cursor = db.cursor()
 
-##助教說資料庫存取次數少一點比較好所以先建一個字典,如果mysql語法有用{}，{}一定要加引號''才讀得到
+#助教說資料庫存取次數少一點比較好所以先建一個字典,如果mysql語法有用{}，{}一定要加引號''才讀得到
 #建立一個店家名稱加上區域的名稱來判斷是否是唯一的店家，用在之後評論家上sotre_id
 # 創建店家清單字典
 number = "select `store_id`,`name`,`district` from `stores`"
