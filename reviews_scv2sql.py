@@ -37,7 +37,8 @@ print(data2)
 #取出資料夾中，各區的名子
 x = os.listdir("台北市")
 zonename = x[1:]
-dir =  {x:i for x,i in enumerate(zonename)} #由字典建立各區索引
+#由字典建立各區索引
+dir =  {x:i for x,i in enumerate(zonename)}
 print(zonename)
 
 
