@@ -3,8 +3,8 @@ import pandas as pd
 import pymysql
 
 #初始化資料庫連線，使用pymysql模組
-#MySQL的使用者：tibame, 密碼:tibame2020, 埠：3306,資料庫：Store_db
-engine = create_engine('mysql+pymysql://tibame:tibame2020@34.66.10.69:3306/Store_db')
+#MySQL的使用者：tibame, 密碼:XXXXX, 埠：3306,資料庫：Store_db
+engine = create_engine('mysql+pymysql://tibame:XXXXX@34.66.10.69:3306/Store_db')
 
 def translate(obj):
     trans_obj  =obj.replace("[斜槓]","/").replace("[星號]","*").replace("[問號]","?").replace("[雙引號]",'"').replace("[左角括號]",">"). \
